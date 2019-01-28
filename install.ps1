@@ -5,4 +5,5 @@ if (!(choco -v))
 }
 
 # アプリのインストール
-choco install -y packages.config
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+choco install -y ($scriptDir + "\packages.config")
