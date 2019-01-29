@@ -21,5 +21,5 @@ Windows PowerShell (管理者) を起動 (Windows+X, A) し、任意のフォル
 
 ```bash
 git clone https://github.com/oki2a24/.chocolatey.git
-.\.chocolatey\install.ps1
+Set-ExecutionPolicy Bypass -Scope Process -Force; .\.chocolatey\install.ps1
 ```
